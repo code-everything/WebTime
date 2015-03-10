@@ -14,9 +14,12 @@ public class WebTime {
 			
 			String line;
 			
-			while (!(line = in.readLine()).contains("UTC"));
+			while (!(line = in.readLine()).contains("UTC")) {
+				//System.out.println(line);
+			}
 			
 			System.out.println(line.substring(4));
+			//System.out.println(line);
 		} catch (IOException e) {
 			System.err.println("error connecting to server.");
 			e.printStackTrace();
